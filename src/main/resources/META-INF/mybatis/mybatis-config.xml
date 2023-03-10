@@ -9,6 +9,7 @@ https://mybatis.org/mybatis-3/ko/getting-started.html 참고
 	<!-- 리턴,파라미터 타입에 사용할 vo 클래스 등의 별칭-->
  	<typeAliases>
 		 <typeAlias type="org.iclass.vo.Community" alias="Community"/>
+		 <typeAlias type="org.iclass.vo.NewMember" alias="NewMember"/>
 	 </typeAliases>
 </configuration>
 

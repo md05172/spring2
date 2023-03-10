@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.iclass.dao.NewMemberMapper">
+
+	<insert id="insert" parameterType="NewMember">
+		INSERT INTO NEW_MEMBER
+			(ID, NAME, PASSWORD, EMAIL, AGE, GENDER, HOBBIES)
+		VALUES
+			(#{id}, #{name}, #{password}, #{email}, #{age}, #{gender}, #{hobbies})
+	</insert>
+	
+	<select id="selectAll" resultType="NewMember">
+		SELECT * FROM NEW_MEMBER
+	</select>
+
+	<update id="update" parameterType="java.util.Map">
+		UPDATE NEW_MEMBER SET NAME = #{name} WHERE id = #{id}
+	</update>
+
+	<delete id="delete" parameterType="string">
+		DELETE FROM NEW_MEMBER WHERE id = #{id}
+	</delete>
+
+</mapper>

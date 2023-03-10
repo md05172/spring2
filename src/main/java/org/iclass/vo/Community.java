@@ -2,13 +2,14 @@ package org.iclass.vo;
 
 import java.sql.Timestamp;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-@Getter
+@Data
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
